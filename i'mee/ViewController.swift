@@ -12,15 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
-    var locationManager = CLLocationManager()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.redColor()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //ライブラリーへの権限を要求
-        
+    @IBAction func tutob(sender: AnyObject) {
         PHPhotoLibrary.requestAuthorization { (status) -> Void in
             
             switch(status){
@@ -37,6 +29,35 @@ class ViewController: UIViewController {
                 print("ライブラリアクセス：制限")
             }
         }
+        
+
+        let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier( "WKV" ) as! UIViewController
+        self.presentViewController( targetViewController, animated: true, completion: nil)
+        
+    }
+    var locationManager = CLLocationManager()
+    
+    override func viewDidLoad() {
+        print("プログレス")
+        super.viewDidLoad()
+        
+        
+        //初回起動判定
+        let ud = NSUserDefaults.standardUserDefaults()
+        print(ud.boolForKey("firstLaunch"))
+        if ud.boolForKey("firstLaunch") {
+            
+            // 初回起動時の処理
+            print("初期起動")
+            
+            //2回目以降の起動では「firstLaunch」のkeyをfalseに
+            ud.setBool(false, forKey: "firstLaunch")
+        }
+        
+        
+        
+
+        
     }
 
     

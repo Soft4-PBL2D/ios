@@ -19,6 +19,8 @@
 		265CFFF71DD0291700B83E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265CFFF51DD0291700B83E07 /* Main.storyboard */; };
 		265CFFF91DD0291700B83E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265CFFF81DD0291700B83E07 /* Assets.xcassets */; };
 		265CFFFC1DD0291700B83E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265CFFFA1DD0291700B83E07 /* LaunchScreen.storyboard */; };
+		26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642C0B1DED09E3005B12EC /* tutoview.swift */; };
+		26642C101DED1F80005B12EC /* tutoview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26642C0F1DED1F80005B12EC /* tutoview.storyboard */; };
 		2664F1F91DDBF88900F356DD /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2664F1F81DDBF88900F356DD /* welcome.png */; };
 		26A33B071DDACFA00005D898 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A33B061DDACFA00005D898 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		265CFFF81DD0291700B83E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265CFFFB1DD0291700B83E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265CFFFD1DD0291700B83E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26642C0B1DED09E3005B12EC /* tutoview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutoview.swift; sourceTree = "<group>"; };
+		26642C0F1DED1F80005B12EC /* tutoview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tutoview.storyboard; sourceTree = "<group>"; };
 		2664F1F81DDBF88900F356DD /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = ../../../Desktop/welcome.png; sourceTree = "<group>"; };
 		26A33B061DDACFA00005D898 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -143,6 +147,8 @@
 				265CFFFD1DD0291700B83E07 /* Info.plist */,
 				264ACBAC1DD5841E00411393 /* icon534.png */,
 				265C001F1DD02B0300B83E07 /* WebViewController.swift */,
+				26642C0B1DED09E3005B12EC /* tutoview.swift */,
+				26642C0F1DED1F80005B12EC /* tutoview.storyboard */,
 			);
 			path = "i'mee";
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				264ACBAB1DD5828E00411393 /* icon.png in Resources */,
+				26642C101DED1F80005B12EC /* tutoview.storyboard in Resources */,
 				265CFFFC1DD0291700B83E07 /* LaunchScreen.storyboard in Resources */,
 				2664F1F91DDBF88900F356DD /* welcome.png in Resources */,
 				264ACBAF1DD5847E00411393 /* icon320.png in Resources */,
@@ -304,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */,
 				265CFFF41DD0291700B83E07 /* ViewController.swift in Sources */,
 				265C00201DD02B0300B83E07 /* WebViewController.swift in Sources */,
 				265CFFF21DD0291700B83E07 /* AppDelegate.swift in Sources */,
@@ -455,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PARM.i-mee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PARM.i-mee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XUh-3V-v3p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="0n3-gQ-Au3">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="tbr-Nj-RIF" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="tbr-Nj-RIF" customClass="ViewController" customModule="i_mee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c0h-xR-EgQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ze7-8M-VR4"/>
@@ -32,7 +32,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XUh-3V-v3p" kind="modal" modalTransitionStyle="crossDissolve" id="gKZ-3B-j7A"/>
+                                    <action selector="tutob:" destination="tbr-Nj-RIF" eventType="touchDown" id="Tfd-LP-DRX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ライブラリアクセスを" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGD-01-cOX">
@@ -89,7 +89,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="i_mee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Singin" wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="i_mee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -157,7 +157,7 @@
         <!--Web View Controller-->
         <scene sceneID="1Xf-sX-rHq">
             <objects>
-                <viewController id="XUh-3V-v3p" customClass="WebViewController" customModule="i_mee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WKV" id="XUh-3V-v3p" customClass="WebViewController" customModule="i_mee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gEy-pV-dbr"/>
                         <viewControllerLayoutGuide type="bottom" id="91g-8s-BqC"/>
