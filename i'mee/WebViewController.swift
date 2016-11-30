@@ -32,7 +32,9 @@ class WebViewController: UIViewController, UIWebViewDelegate{
         
     }
     
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
     //Notworking
     func navigationBarAndStatusBarHidden(hidden: Bool, animated: Bool)
     {
