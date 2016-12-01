@@ -23,6 +23,7 @@
 		26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642C0B1DED09E3005B12EC /* tutoview.swift */; };
 		26642C101DED1F80005B12EC /* tutoview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26642C0F1DED1F80005B12EC /* tutoview.storyboard */; };
 		26A33B071DDACFA00005D898 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A33B061DDACFA00005D898 /* AssetsLibrary.framework */; };
+		26D79B221DEFC7380066AC16 /* ImeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D79B211DEFC7380066AC16 /* ImeeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		26642C0B1DED09E3005B12EC /* tutoview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutoview.swift; sourceTree = "<group>"; };
 		26642C0F1DED1F80005B12EC /* tutoview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tutoview.storyboard; sourceTree = "<group>"; };
 		26A33B061DDACFA00005D898 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		26D79B211DEFC7380066AC16 /* ImeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImeeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				265C001F1DD02B0300B83E07 /* WebViewController.swift */,
 				26642C0B1DED09E3005B12EC /* tutoview.swift */,
 				26642C0F1DED1F80005B12EC /* tutoview.storyboard */,
+				26D79B211DEFC7380066AC16 /* ImeeView.swift */,
 			);
 			path = "i'mee";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D79B221DEFC7380066AC16 /* ImeeView.swift in Sources */,
 				26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */,
 				265CFFF41DD0291700B83E07 /* ViewController.swift in Sources */,
 				265C00201DD02B0300B83E07 /* WebViewController.swift in Sources */,
@@ -459,7 +463,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7MY553QGW7;
 				INFOPLIST_FILE = "i'mee/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PARM.i-mee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,7 +481,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7MY553QGW7;
 				INFOPLIST_FILE = "i'mee/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PARM.i-mee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
