@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "i&apos;mee/WebViewController.swift"
-            timestampString = "502262158.707202"
+            timestampString = "502297581.495411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "webView(_:decidePolicyForNavigationAction:decisionHandler:)"
             landmarkType = "7">
          </BreakpointContent>

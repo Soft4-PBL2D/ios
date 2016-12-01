@@ -17,15 +17,20 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
     var _webkitview: WKWebView?
     var webview : WKWebView?
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        let activitiyViewController = ActivityViewController(message: "接続中")
+        presentViewController(activitiyViewController, animated: true, completion: nil)
         
         //  デバイスのCGRectを取得
         let deviceBound : CGRect = UIScreen.mainScreen().bounds
         
         //let initialurl = NSURL(string: "https://imee.amfys.net:8443/login.php")
-        let initialurl = NSURL(string: "http://192.168.41.21:3000/")
+        let initialurl = NSURL(string: "http://192.168.11.27:3000/")
 
         //  WKWebView
         
@@ -38,8 +43,10 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         self.webview!.allowsLinkPreview = false
         
         
+        
+        
     }
-    
+
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .Default
     }
@@ -71,38 +78,64 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         super.didReceiveMemoryWarning()
     }
     
+
     
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
         
         if error.code == -1001 { // TIMED OUT:
             
             print("接続タイムアウト")
-            let alertController = UIAlertController(title: "タイムアウトしました", message: "I'meeサーバーへの接続がタイムアウトしました。", preferredStyle: .Alert)
             
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alertController = UIAlertController(title: "タイムアウトしました", message: "I'meeサーバーへの接続がタイムアウトしました。", preferredStyle: .Alert)
+            //ハイボタン
+            let defaultAction:UIAlertAction = UIAlertAction(title: "はい",
+                                                            style: UIAlertActionStyle.Default,
+                                                            handler:{
+                                                                (action:UIAlertAction!) -> Void in
+                                                                let targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier( "tuto" )
+                                                                self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
+            })
             alertController.addAction(defaultAction)
+            
+            
             
             presentViewController(alertController, animated: true, completion: nil)
             
-            webView.reload()
             
+                       
         } else if error.code == -1003 { // SERVER CANNOT BE FOUND
             
             print("サーバーが見つからない")
-            let alertController = UIAlertController(title: "サーバーに接続できませんでした", message: "しばらく時間をおいてアクセスしてください", preferredStyle: .Alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alertController = UIAlertController(title: "サーバーへの接続に失敗しました", message: "I'meeサーバーへ接続できませんでした。", preferredStyle: .Alert)
+            //ハイボタン
+            let defaultAction:UIAlertAction = UIAlertAction(title: "はい",
+                                                            style: UIAlertActionStyle.Default,
+                                                            handler:{
+                                                                (action:UIAlertAction!) -> Void in
+                                                                let targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier( "tuto" )
+                                                                self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
+            })
             alertController.addAction(defaultAction)
+            
+            
             
             presentViewController(alertController, animated: true, completion: nil)
             
         } else if error.code == -1100 { // URL NOT FOUND ON SERVER
             
             print("URLが見つからない")
-            let alertController = UIAlertController(title: "リクエストを処理できませんでした", message: "URLが見つかりません", preferredStyle: .Alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alertController = UIAlertController(title: "リクエストを処理できませんでした", message: "処理に失敗しました", preferredStyle: .Alert)
+            //ハイボタン
+            let defaultAction:UIAlertAction = UIAlertAction(title: "はい",
+                                                            style: UIAlertActionStyle.Default,
+                                                            handler:{
+                                                                (action:UIAlertAction!) -> Void in
+                                                                let targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier( "tuto" )
+                                                                self.presentViewController( targetView as! UIViewController, animated: true, completion: nil)
+            })
             alertController.addAction(defaultAction)
+            
+            
             
             presentViewController(alertController, animated: true, completion: nil)
             
@@ -111,11 +144,15 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
     
     
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
-        
+
         
         if CheckReachability("zzzz3000") {
             decisionHandler(WKNavigationActionPolicy.Allow)
             print("接続OK")
+            let activitiyViewController = ActivityViewController(message: "接続中")
+            presentViewController(activitiyViewController, animated: true, completion: nil)
+            
+            
         } else {
             print("接続NG")
             decisionHandler(WKNavigationActionPolicy.Cancel)
@@ -131,6 +168,8 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
     }
     
     
+
+
     
     func CheckReachability(host_name:String)->Bool{
         
