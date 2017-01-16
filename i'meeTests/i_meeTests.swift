@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import i_mee
 
 class i_meeTests: XCTestCase {
     

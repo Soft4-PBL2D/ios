@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		263306B31DF06CEF0051BE9A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263306B21DF06CEF0051BE9A /* ActivityViewController.swift */; };
-		2642F3D81DEE5724009B2C33 /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2642F3D71DEE5724009B2C33 /* welcome.png */; };
-		2642F3DA1DEE5732009B2C33 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2642F3D91DEE5732009B2C33 /* icon.png */; };
-		2642F3DC1DEE573A009B2C33 /* icon534.png in Resources */ = {isa = PBXBuildFile; fileRef = 2642F3DB1DEE573A009B2C33 /* icon534.png */; };
-		2642F3DE1DEE5740009B2C33 /* icon320.png in Resources */ = {isa = PBXBuildFile; fileRef = 2642F3DD1DEE5740009B2C33 /* icon320.png */; };
+		264ACBAB1DD5828E00411393 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 264ACBAA1DD5828E00411393 /* icon.png */; };
+		264ACBAD1DD5841E00411393 /* icon534.png in Resources */ = {isa = PBXBuildFile; fileRef = 264ACBAC1DD5841E00411393 /* icon534.png */; };
+		264ACBAF1DD5847E00411393 /* icon320.png in Resources */ = {isa = PBXBuildFile; fileRef = 264ACBAE1DD5847E00411393 /* icon320.png */; };
 		265BDD9E1DDC280000EBD8FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265BDD9D1DDC280000EBD8FA /* SystemConfiguration.framework */; };
 		265C00071DD0291700B83E07 /* i_meeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C00061DD0291700B83E07 /* i_meeTests.swift */; };
 		265C00121DD0291700B83E07 /* i_meeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C00111DD0291700B83E07 /* i_meeUITests.swift */; };
@@ -23,8 +21,8 @@
 		265CFFFC1DD0291700B83E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265CFFFA1DD0291700B83E07 /* LaunchScreen.storyboard */; };
 		26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642C0B1DED09E3005B12EC /* tutoview.swift */; };
 		26642C101DED1F80005B12EC /* tutoview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26642C0F1DED1F80005B12EC /* tutoview.storyboard */; };
+		2664F1F91DDBF88900F356DD /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 2664F1F81DDBF88900F356DD /* welcome.png */; };
 		26A33B071DDACFA00005D898 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A33B061DDACFA00005D898 /* AssetsLibrary.framework */; };
-		26D79B221DEFC7380066AC16 /* ImeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D79B211DEFC7380066AC16 /* ImeeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		263306B21DF06CEF0051BE9A /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		2642F3D71DEE5724009B2C33 /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
-		2642F3D91DEE5732009B2C33 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		2642F3DB1DEE573A009B2C33 /* icon534.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon534.png; sourceTree = "<group>"; };
-		2642F3DD1DEE5740009B2C33 /* icon320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon320.png; sourceTree = "<group>"; };
+		264ACBAA1DD5828E00411393 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Desktop/icon.png; sourceTree = "<group>"; };
+		264ACBAC1DD5841E00411393 /* icon534.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon534.png; path = ../../../Desktop/icon534.png; sourceTree = "<group>"; };
+		264ACBAE1DD5847E00411393 /* icon320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon320.png; path = ../../../Desktop/icon320.png; sourceTree = "<group>"; };
 		265BDD9D1DDC280000EBD8FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		265C00021DD0291700B83E07 /* i'meeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "i'meeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		265C00061DD0291700B83E07 /* i_meeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i_meeTests.swift; sourceTree = "<group>"; };
@@ -67,8 +63,8 @@
 		265CFFFD1DD0291700B83E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26642C0B1DED09E3005B12EC /* tutoview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutoview.swift; sourceTree = "<group>"; };
 		26642C0F1DED1F80005B12EC /* tutoview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tutoview.storyboard; sourceTree = "<group>"; };
+		2664F1F81DDBF88900F356DD /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = ../../../Desktop/welcome.png; sourceTree = "<group>"; };
 		26A33B061DDACFA00005D898 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		26D79B211DEFC7380066AC16 /* ImeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImeeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,21 +136,19 @@
 		265CFFF01DD0291700B83E07 /* i'mee */ = {
 			isa = PBXGroup;
 			children = (
+				2664F1F81DDBF88900F356DD /* welcome.png */,
+				264ACBAA1DD5828E00411393 /* icon.png */,
 				265CFFF11DD0291700B83E07 /* AppDelegate.swift */,
 				265CFFF31DD0291700B83E07 /* ViewController.swift */,
-				2642F3DD1DEE5740009B2C33 /* icon320.png */,
-				2642F3DB1DEE573A009B2C33 /* icon534.png */,
 				265CFFF51DD0291700B83E07 /* Main.storyboard */,
 				265CFFF81DD0291700B83E07 /* Assets.xcassets */,
-				2642F3D91DEE5732009B2C33 /* icon.png */,
-				2642F3D71DEE5724009B2C33 /* welcome.png */,
 				265CFFFA1DD0291700B83E07 /* LaunchScreen.storyboard */,
+				264ACBAE1DD5847E00411393 /* icon320.png */,
 				265CFFFD1DD0291700B83E07 /* Info.plist */,
+				264ACBAC1DD5841E00411393 /* icon534.png */,
 				265C001F1DD02B0300B83E07 /* WebViewController.swift */,
-				263306B21DF06CEF0051BE9A /* ActivityViewController.swift */,
 				26642C0B1DED09E3005B12EC /* tutoview.swift */,
 				26642C0F1DED1F80005B12EC /* tutoview.storyboard */,
-				26D79B211DEFC7380066AC16 /* ImeeView.swift */,
 			);
 			path = "i'mee";
 			sourceTree = "<group>";
@@ -291,14 +285,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264ACBAB1DD5828E00411393 /* icon.png in Resources */,
 				26642C101DED1F80005B12EC /* tutoview.storyboard in Resources */,
-				2642F3DC1DEE573A009B2C33 /* icon534.png in Resources */,
-				2642F3D81DEE5724009B2C33 /* welcome.png in Resources */,
-				2642F3DA1DEE5732009B2C33 /* icon.png in Resources */,
-				2642F3DE1DEE5740009B2C33 /* icon320.png in Resources */,
 				265CFFFC1DD0291700B83E07 /* LaunchScreen.storyboard in Resources */,
+				2664F1F91DDBF88900F356DD /* welcome.png in Resources */,
+				264ACBAF1DD5847E00411393 /* icon320.png in Resources */,
 				265CFFF91DD0291700B83E07 /* Assets.xcassets in Resources */,
 				265CFFF71DD0291700B83E07 /* Main.storyboard in Resources */,
+				264ACBAD1DD5841E00411393 /* icon534.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D79B221DEFC7380066AC16 /* ImeeView.swift in Sources */,
-				263306B31DF06CEF0051BE9A /* ActivityViewController.swift in Sources */,
 				26642C0C1DED09E3005B12EC /* tutoview.swift in Sources */,
 				265CFFF41DD0291700B83E07 /* ViewController.swift in Sources */,
 				265C00201DD02B0300B83E07 /* WebViewController.swift in Sources */,
