@@ -35,9 +35,6 @@ class ViewController: UIViewController {
         self.presentViewController( targetViewController, animated: true, completion: nil)
         
     }
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {

@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="top" id="OdP-3I-kLW"/>
                         <viewControllerLayoutGuide type="bottom" id="YeI-pR-EAb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="tutoview" id="iDp-Ld-rdU" customClass="tutoview" customModule="i_mee" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="iDp-Ld-rdU" customClass="tutoview" customModule="i_mee" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

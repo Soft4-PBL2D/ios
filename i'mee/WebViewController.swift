@@ -22,7 +22,7 @@ class WebViewController: UIViewController, UIWebViewDelegate{
         self.view = self._webkitview!
         
         //let initialurl = NSURL(string: "https://imee.amfys.net:8443/login.php")
-        let initialurl = NSURL(string: "http://192.168.11.27:3000/")
+        let initialurl = NSURL(string: "http://192.168.41.21:3000/")
         let initial_request = NSURLRequest(URL: initialurl!,
                                            cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData,
                                            timeoutInterval: 6.0)

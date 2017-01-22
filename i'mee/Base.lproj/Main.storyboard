@@ -173,42 +173,6 @@
             </objects>
             <point key="canvasLocation" x="860" y="38"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="DTe-Se-nNS">
-            <objects>
-                <viewController storyboardIdentifier="tuto" id="hRw-Mc-HUF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4bT-cm-zfV"/>
-                        <viewControllerLayoutGuide type="bottom" id="gBu-IL-OG3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2rx-ID-Qd6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBi-Mh-80n">
-                                <rect key="frame" x="138" y="536" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="リロード"/>
-                                <connections>
-                                    <segue destination="XUh-3V-v3p" kind="modal" id="wLC-IP-TEB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="接続に失敗しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIZ-iy-ilW">
-                                <rect key="frame" x="64" y="125" width="247" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D6i-gu-Iyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1837.5999999999999" y="-473.6131934032984"/>
-        </scene>
     </scenes>
     <resources>
         <image name="welcome.png" width="752" height="1336"/>
