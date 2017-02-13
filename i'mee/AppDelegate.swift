@@ -61,54 +61,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         
-        // ここから
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        if CheckReachability("aaa") {
-            print("接続が確認されました")
 
-        } else {
-            print("接続エラー")
-            
-            let alertController = UIAlertController(title: "ネットワークに接続してください", message: "I'meeはオフラインでは動作しません", preferredStyle: .Alert)
-            
-            let defaultAction = UIAlertAction(title: "了解", style: .Default, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            self.window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
-        }
-        
-        // ここまで
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         
     }
     
     func applicationWillTerminate(application: UIApplication) {
     }
     
-    
 
-    func CheckReachability(host_name:String)->Bool{
-        
-        let reachability = SCNetworkReachabilityCreateWithName(nil, host_name)!
-        var flags = SCNetworkReachabilityFlags.ConnectionAutomatic
-        if !SCNetworkReachabilityGetFlags(reachability, &flags) {
-            return false
-        }
-        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
-        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
-        return (isReachable && !needsConnection)
-    }
+    
     
 
     
     
-    
-    
-    
-    
-
-
 }
+
+
 
 
 
